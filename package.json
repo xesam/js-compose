@@ -1,0 +1,51 @@
+{
+    "name": "js-compose",
+    "version": "0.0.1",
+    "description": "A simple utility for composing JavaScript functions.",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/xesam/js-compose.git"
+    },
+    "devDependencies": {
+        "@types/jest": "^30.0.0",
+        "jest": "^30.0.4",
+        "microbundle": "^0.15.1",
+        "rimraf": "^6.0.1",
+        "ts-jest": "^29.4.0",
+        "typescript": "^5.8.3"
+    },
+    "source": "src/index.ts",
+    "types": "./dist/index.d.ts",
+    "exports": {
+        "types": "./dist/index.d.ts",
+        "require": "./dist/index.js",
+        "default": "./dist/index.modern.js"
+    },
+    "main": "./dist/index.js",
+    "module": "./dist/index.module.js",
+    "unpkg": "./dist/index.umd.js",
+    "scripts": {
+        "test": "jest",
+        "clean": "rimraf dist",
+        "build": "rimraf dist && microbundle",
+        "dev": "microbundle watch"
+    },
+    "directories": {
+        "src": "src",
+        "test": "__tests__"
+    },
+    "files": [
+        "src"
+    ],
+    "publishConfig": {
+        "access": "public",
+        "registry": "https://registry.npmjs.org"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/xesam/js-compose/issues"
+    },
+    "homepage": "https://github.com/xesam/js-compose#readme"
+}

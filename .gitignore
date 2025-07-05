@@ -1,0 +1,9 @@
+.idea
+*.iml
+node_modules
+.npmrc
+*.private.json
+*.private.js
+.vscode
+pnpm-lock.yaml
+.DS_Store
